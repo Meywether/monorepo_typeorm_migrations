@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist_migrations",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/testlib": ["libs/testlib/src"],
+      "@app/testlib/*": ["libs/testlib/src/*"]
+    }
+  },
+  "include": ["apps/**/migrations/*.ts"],
+  "exclude": ["src/*", "node_modules", "dist", "dist_migrations", "test", "**/*spec.ts"]
+}
